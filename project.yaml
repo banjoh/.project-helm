@@ -1,0 +1,74 @@
+# .project metadata for Helm
+# Documentation: https://github.com/cncf/automation/tree/main/utilities/dot-project
+
+# TODO: Add package_managers if distributed via registries
+
+schema_version: "1.0.0"
+slug: "helm"
+name: "Helm"
+description: "The Kubernetes Package Manager"
+type: "project"
+project_lead: "technosophos" # TODO: AUTO-DETECTED — please verify
+slack_channels: # TODO: AUTO-DETECTED — please verify the channel(s) below
+  - name: "#helm-dev"
+    link: "https://slack.k8s.io"
+    primary: true
+  - name: "#helm-logos"
+  - name: "#chartmuseum"
+
+maturity_log:
+  - phase: "graduated"
+    date: "2018-06-01T00:00:00Z"
+    issue: "https://github.com/cncf/toc/pull/384" # TODO: AUTO-DETECTED — please verify
+
+repositories: # TODO: AUTO-DETECTED primary — please verify
+  - url: "https://github.com/helm/helm"
+    primary: true
+    # tags: [core, sig-apps] # Optional
+
+website: "https://helm.sh/"
+
+artwork: "https://landscape.cncf.io/logos/helm.svg"
+
+adopters:
+  path: "https://github.com/helm/helm/blob/main/ADOPTERS.md"
+
+
+# TODO: Add package manager identifiers if your project is distributed via registries
+# package_managers:
+#   docker: "helm/helm"
+
+social:
+  twitter: "https://twitter.com/helmpack"
+
+security:
+  policy:
+    path: "https://github.com/helm/helm/blob/main/SECURITY.md"
+  contact:
+    advisory_url: "https://github.com/helm/helm/security/advisories/new"
+
+governance:
+  contributing:
+    path: "https://github.com/helm/helm/blob/main/CONTRIBUTING.md"
+  code_of_conduct:
+    path: "https://github.com/helm/helm/blob/main/code-of-conduct.md"
+
+legal:
+  license:
+    path: "https://github.com/helm/helm/blob/main/LICENSE"
+  identity_type:
+    has_dco: true # AUTO-DETECTED — please verify
+    has_cla: false # AUTO-DETECTED — please verify
+    dco_url:
+      path: "https://developercertificate.org/"
+
+documentation:
+  readme:
+    path: "https://github.com/helm/helm/blob/main/README.md"
+
+landscape:
+  category: "App Definition and Development"
+  subcategory: "Application Definition & Image Build"
+
+# CLOMonitor Score: 86/100
+# Documentation: 84 | License: 75 | Best Practices: 100 | Security: 84
